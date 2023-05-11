@@ -351,15 +351,17 @@ p{
 
  /* Education */
 .education-wrap{
-    width: 100%;
-    padding: 3rem 3.5rem;
+    max-width: 1200px;
+    padding: 3rem 1rem;
+    margin: 0 auto;
     /* margin-bottom: 2rem; */
 }
 .education-details{
-    width: inherit;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 1rem;
+    overflow-wrap: break-word;
 }
 .EQ-Head{
     width: 100%;
@@ -626,6 +628,71 @@ p{
         justify-content: space-evenly;
         align-items: center;
       }
+      .EQ-Head{
+        font-size: 1rem;
+      }
+      .session, .board{
+        font-size: 0.7rem;
+      }
+      .qualification h3, .qualification p{
+        font-size: 1rem;
+      }
+      .qualification h5{
+        font-size: 0.8rem;
+      }
+      .qualification, .session, .board{
+        overflow-wrap: break-word;
+      }
+}
+@media(max-width:462px){
+    .EQ-Head{
+        font-size: 0.8rem;
+      }
+      .session, .board{
+        font-size: 0.7rem;
+      }
+      .qualification h3, .qualification p{
+        font-size: 0.8rem;
+      }
+      .qualification h5{
+        font-size: 0.8rem;
+      }
+      .qualification, .session, .board{
+        overflow-wrap: break-word;
+      }
+      footer p, a{
+        font-size: 1rem;
+      }
+      .f-top-details{
+        gap: 0.5rem;
+      }
+      h1, h2, h3, h4, h5, h6{
+        font-size: 1.3rem;
+      }
+      a, p{
+        font-size: 1rem;
+      }
+}
+
+@media (max-width:310px){
+    .education-wrap{
+        padding: 3rem 0;
+    }
+    h1, h2, h3, h4, h5, h6{
+        font-size: 1.3rem;
+    }
+    a, p{
+        font-size: 1rem;
+    }
+    .details i{
+        font-size: 0.85rem;
+    }
+    footer p, a{
+        font-size: 0.8rem;
+    }
+    .f-top-details{
+        gap: 0.5rem;
+    }
 }
 
 /* ----------------------------------------------
