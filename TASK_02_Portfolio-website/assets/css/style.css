@@ -32,6 +32,7 @@
     --light: #dadada;
     --highlight: #1e88e5;
     --features: #ffbc2b;
+    --green: #4caf50;
     --primary-font: 'Mulish', sans-serif;
     --secondary-font: 'Mulish', sans-serif;
 }
@@ -49,6 +50,13 @@ hr{
 .center-m{
     margin-left: auto ;
     margin-right: auto;
+}
+.center{
+    text-align: center;
+}
+.center-vertical{
+    margin-top: auto;
+    margin-bottom: auto;
 }
 h1, h2, h3, h4, h5, h6{
     letter-spacing: 0;
@@ -255,11 +263,6 @@ p{
     outline: 10px solid rgba(255, 255, 255, 0.1);
     margin-bottom: 1.1rem;
 }
-.heading{
-    text-align: center;
-    font-weight: 800;
-    margin-bottom: 1rem;
-}
 .input-cursor {
     display: inline-block;
     width: 2px;
@@ -285,8 +288,12 @@ p{
 }
 /* about sec styles */
 .about-wrap{
-    padding: 100px 0;
+    padding: 100px 0 3rem 0;
     width: 100%;
+}
+.heading{
+    text-align: center;
+    margin-bottom: 1rem;
 }
 .info{
     display: flex;
@@ -341,8 +348,41 @@ p{
 .details i{
     font-size: 1.2rem;
 }
- /* Task sec */
 
+ /* Education */
+.education-wrap{
+    width: 100%;
+    padding: 3rem 3.5rem;
+    /* margin-bottom: 2rem; */
+}
+.education-details{
+    width: inherit;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 1rem;
+}
+.EQ-Head{
+    width: 100%;
+    background-color: rgba(135, 135, 135, 0.2);
+    /* color: var(--dark); */
+    padding: 0.5rem;
+}
+.status{
+    margin-top: 0.2rem;
+    /* padding: 0.2rem; */
+}
+.passed{
+    color: var(--green);
+}
+.pursuing{
+    color: var(--highlight);
+}
+.qualification, .board, .session{
+    padding: 1rem;
+}
+
+
+ /* Task sec */
 .task-sec{
     padding: 2rem 3.5rem;
     text-align: center;
