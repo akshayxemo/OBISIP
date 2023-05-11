@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="icon" href="favicon.ico">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <img src="assets/img/temperature.jpg" alt="">
+        <div class="heading">
+            <h1 class="header">Temperature Converter</h1>
+            <div class="typing-container">
+                <span id="sentence" class="sentence">Convert it to&nbsp;</span>
+                <span id="feature-text"></span>
+                <span class="input-cursor"></span>
+            </div>
+        </div>
+        <p id="error">Input must contains only NUMBER</p>
+        <div class="converter-box">
+            <div class="source inputs">
+                <input type="text" name="source" id="source" placeholder="Enter temperature"  oninput="calc(this.id)">
+                <select id="s-unit" onchange="calc('source')">
+                    <option value="C">&degC</option>
+                    <option value="F">&degF</option>
+                    <option value="K">&degK</option>
+                </select>
+            </div>
+            <span class="by-dir-way">&lrarr;</span>
+            <div class="dest inputs">
+                <input type="text" name="dest" id="dest" placeholder="Genrated temperature" oninput="calc(this.id)">
+                <select id="d-unit" onchange="calc('source')">
+                    <option value="C">&degC</option>
+                    <option value="F">&degF</option>
+                    <option value="K">&degK</option>
+                </select>
+            </div>
+        </div>
+        <div class="footer">Made with 💖 by Akshay </div>
+    </div>
+
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/convert.js"></script>
+</body>
+</html>
